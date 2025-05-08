@@ -88,6 +88,7 @@ spec:
                           items:
                             type: string
                           type: array
+                          x-kubernetes-list-type: set
                         priorities:
                           description: Allows you to filter events by priority. Needs
                             to be an array of PagerDuty priority IDs. Available through
@@ -146,6 +147,7 @@ spec:
                           items:
                             type: string
                           type: array
+                          x-kubernetes-list-type: set
                         priorities:
                           description: Allows you to filter events by priority. Needs
                             to be an array of PagerDuty priority IDs. Available through
@@ -391,6 +393,7 @@ spec:
                           items:
                             type: string
                           type: array
+                          x-kubernetes-list-type: set
                         priorities:
                           description: Allows you to filter events by priority. Needs
                             to be an array of PagerDuty priority IDs. Available through

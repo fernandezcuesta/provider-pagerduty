@@ -62,16 +62,18 @@ spec:
                   contactMethod:
                     description: A contact method block, configured as a block described
                       below.
-                    properties:
-                      id:
-                        description: The id of the referenced contact method.
-                        type: string
-                      type:
-                        description: The type of contact method. Can be email_contact_method,
-                          phone_contact_method, push_notification_contact_method or
-                          sms_contact_method.
-                        type: string
-                    type: object
+                    items:
+                      properties:
+                        id:
+                          description: The id of the referenced contact method.
+                          type: string
+                        type:
+                          description: The type of contact method. Can be email_contact_method,
+                            phone_contact_method, push_notification_contact_method
+                            or sms_contact_method.
+                          type: string
+                      type: object
+                    type: array
                   startDelayInMinutes:
                     description: The delay before firing the rule, in minutes.
                     type: number
@@ -180,16 +182,18 @@ spec:
                   contactMethod:
                     description: A contact method block, configured as a block described
                       below.
-                    properties:
-                      id:
-                        description: The id of the referenced contact method.
-                        type: string
-                      type:
-                        description: The type of contact method. Can be email_contact_method,
-                          phone_contact_method, push_notification_contact_method or
-                          sms_contact_method.
-                        type: string
-                    type: object
+                    items:
+                      properties:
+                        id:
+                          description: The id of the referenced contact method.
+                          type: string
+                        type:
+                          description: The type of contact method. Can be email_contact_method,
+                            phone_contact_method, push_notification_contact_method
+                            or sms_contact_method.
+                          type: string
+                      type: object
+                    type: array
                   startDelayInMinutes:
                     description: The delay before firing the rule, in minutes.
                     type: number
@@ -357,16 +361,18 @@ spec:
                   contactMethod:
                     description: A contact method block, configured as a block described
                       below.
-                    properties:
-                      id:
-                        description: The id of the referenced contact method.
-                        type: string
-                      type:
-                        description: The type of contact method. Can be email_contact_method,
-                          phone_contact_method, push_notification_contact_method or
-                          sms_contact_method.
-                        type: string
-                    type: object
+                    items:
+                      properties:
+                        id:
+                          description: The id of the referenced contact method.
+                          type: string
+                        type:
+                          description: The type of contact method. Can be email_contact_method,
+                            phone_contact_method, push_notification_contact_method
+                            or sms_contact_method.
+                          type: string
+                      type: object
+                    type: array
                   id:
                     description: The id of the referenced contact method.
                     type: string

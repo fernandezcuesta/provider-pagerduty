@@ -45,7 +45,7 @@ type NotificationRuleContactMethodParameters struct {
 type NotificationRuleInitParameters struct {
 
 	// A contact method block, configured as a block described below.
-	ContactMethod *NotificationRuleContactMethodInitParameters `json:"contactMethod,omitempty" tf:"contact_method,omitempty"`
+	ContactMethod []NotificationRuleContactMethodInitParameters `json:"contactMethod,omitempty" tf:"contact_method,omitempty"`
 
 	// The delay before firing the rule, in minutes.
 	StartDelayInMinutes *float64 `json:"startDelayInMinutes,omitempty" tf:"start_delay_in_minutes,omitempty"`
@@ -69,7 +69,7 @@ type NotificationRuleInitParameters struct {
 type NotificationRuleObservation struct {
 
 	// A contact method block, configured as a block described below.
-	ContactMethod *NotificationRuleContactMethodObservation `json:"contactMethod,omitempty" tf:"contact_method,omitempty"`
+	ContactMethod []NotificationRuleContactMethodObservation `json:"contactMethod,omitempty" tf:"contact_method,omitempty"`
 
 	// The id of the referenced contact method.
 	ID *string `json:"id,omitempty" tf:"id,omitempty"`
@@ -88,7 +88,7 @@ type NotificationRuleParameters struct {
 
 	// A contact method block, configured as a block described below.
 	// +kubebuilder:validation:Optional
-	ContactMethod *NotificationRuleContactMethodParameters `json:"contactMethod,omitempty" tf:"contact_method,omitempty"`
+	ContactMethod []NotificationRuleContactMethodParameters `json:"contactMethod,omitempty" tf:"contact_method,omitempty"`
 
 	// The delay before firing the rule, in minutes.
 	// +kubebuilder:validation:Optional

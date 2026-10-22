@@ -138,8 +138,10 @@ type NotificationRuleStatus struct {
 // +kubebuilder:object:root=true
 // +kubebuilder:subresource:status
 // +kubebuilder:storageversion
+// +kubebuilder:deprecatedversion:warning="NotificationRule v1alpha1 is deprecated, use v1alpha2: its singleton lists are embedded objects. Deprecated since v1.2.2."
 
 // NotificationRule is the Schema for the NotificationRules API. Creates and manages notification rules for a user in PagerDuty.
+// Deprecated: This API version (v1alpha1) has been deprecated in release v1.2.2.
 // +kubebuilder:printcolumn:name="SYNCED",type="string",JSONPath=".status.conditions[?(@.type=='Synced')].status"
 // +kubebuilder:printcolumn:name="READY",type="string",JSONPath=".status.conditions[?(@.type=='Ready')].status"
 // +kubebuilder:printcolumn:name="EXTERNAL-NAME",type="string",JSONPath=".metadata.annotations.crossplane\\.io/external-name"
